@@ -20,10 +20,11 @@
       <!-- flaticon -->
       <link rel="stylesheet" href="assets/css/flaticon.min.css">
       <!-- preload images -->
+      <link rel="preload" as="image" href="./assets/images/hero-banner.webp">
 
 </head>
 
-<body>
+<body id="top">
     <!-- HEADER -->
 
     <header class="header">
@@ -36,7 +37,7 @@
                  <li class="header-top-item">
                     <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
 
-                    <p class="item-title">Call Us :  </p>
+                    <p class="item-title">Call Us : +1 (336) 491-2948  </p>
 
                     <a href="tel: +1 (336) 491-2948" class="item-link">+1 (336) 491-2948</a>
                  </li>
@@ -46,7 +47,7 @@
                     <ul class="social-list">
 
                         <li>
-                            <a href="#" class="social-link">
+                            <a target="_blank" href="https://twitter.com/mixifiaudio" class="social-link">
                             <ion-icon name="logo-twitter"></ion-icon>
                             </a>
                         </li>
@@ -85,16 +86,16 @@
                             <a href="#pricing" class="navbar-link" data-nav-link>Pricing</a>
                         </li>
 
-                        <li class="navbar-item">
+                        <!-- <li class="navbar-item">
                             <a href="#discography" class="navbar-link" data-nav-link>Discography</a>
-                        </li>
+                        </li> -->
 
                         <li class="navbar-item">
                             <a href="#appointment" class="navbar-link" data-nav-link>Appointment</a>
                         </li>
 
                         <li class="navbar-item">
-                            <a href="#" class="navbar-link" data-nav-link>Contact</a>
+                            <a href="#contact-us" class="navbar-link" data-nav-link>Contact</a>
                         </li>
 
                     </ul>
@@ -121,7 +122,7 @@
             <section class="section hero has-before has-bg-image" id="home"
             style="background-image: url('./assets/images/hero-banner.webp');">
             <div class="container">
-                <h1 class="h1 hero-title">Audio Recording and Mixing</h1>
+                <h1 class="h1 hero-title">Audio Mixing and Mastering</h1>
 
                 <p class="hero-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quia saepe voluptatem dignissimos repellat, vero modi illum consequuntur itaque tempore qui, eum excepturi hic in officia! Officiis error ullam similique!
@@ -244,7 +245,7 @@
                             <li>
                                 <button class="filter-btn active" data-filter-btn="all">
                                     <div class="btn-icon">
-                                        <img class="center-icon" src="/assets/images/allpricing-mini.png" width="40" alt="icon-btn">
+                                        <img class="center-icon" src="./assets/images/allpricing-mini.png" width="40" alt="icon-btn">
                                     </div>
 
                                     <p class="btn-text">All Pricing</p>
@@ -252,9 +253,9 @@
                             </li>
 
                             <li>
-                                <button class="filter-btn" data-filter-btn="mixing">
+                                <button id="mixingprice" class="filter-btn" data-filter-btn="mixing">
                                     <div class="btn-icon">
-                                            <img class="center-icon" src="/assets/images/twotrack-mini.png" width="40" alt="icon-btn">
+                                            <img class="center-icon" src="./assets/images/twotrack-mini.png" width="40" alt="icon-btn">
                                     </div>
 
                                     <p class="btn-text">Mixing</p>
@@ -263,9 +264,9 @@
 
 
                             <li>
-                                <button class="filter-btn" data-filter-btn="mastering">
+                                <button id="masteringprice" class="filter-btn" data-filter-btn="mastering">
                                     <div class="btn-icon">
-                                        <img class="center-icon" src="/assets/images/mastering-mini.png" width="40" alt="icon-btn">
+                                        <img class="center-icon" src="./assets/images/mastering-mini.png" width="40" alt="icon-btn">
                                     </div>
 
                                     <p class="btn-text">Mastering</p>
@@ -273,9 +274,9 @@
                             </li>
 
                             <li>
-                                <button class="filter-btn" data-filter-btn="production">
+                                <button id="productionprice" class="filter-btn" data-filter-btn="production">
                                     <div class="btn-icon">
-                                        <img class="center-icon" src="/assets/images/production-mini.png" width="40" alt="icon-btn">
+                                        <img class="center-icon" src="./assets/images/production-mini.png" width="40" alt="icon-btn">
                                     </div>
 
                                     <p class="btn-text">Production</p>
@@ -292,7 +293,7 @@
                                 <div class="pricing-card">
 
                                     <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
-                                        <img src="/assets/images/pricing-twotrack.png" alt="2-Track Mixing" width="90" height="90" class="img-cover">
+                                        <img src="./assets/images/pricing-twotrack.png" alt="2-Track Mixing" width="90" height="90" class="img-cover">
                                     </figure>
 
                                     <div class="wrapper">
@@ -310,7 +311,7 @@
                                 <div class="pricing-card">
 
                                     <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
-                                        <img src="/assets/images/pricing-fullstem.png" alt="Full Stems Mixing" width="90" height="90" class="img-cover">
+                                        <img src="./assets/images/pricing-fullstem.png" alt="Full Stems Mixing" width="90" height="90" class="img-cover">
                                     </figure>
 
                                     <div class="wrapper">
@@ -328,7 +329,7 @@
                                 <div class="pricing-card">
 
                                     <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
-                                        <img src="/assets/images/pricing-mastering.png" alt="Mastering" width="90" height="90" class="img-cover">
+                                        <img src="./assets/images/pricing-mastering.png" alt="Mastering" width="90" height="90" class="img-cover">
                                     </figure>
 
                                     <div class="wrapper">
@@ -346,7 +347,7 @@
                                 <div class="pricing-card">
 
                                     <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
-                                        <img src="/assets/images/pricing-production.png" alt="Production" width="90" height="90" class="img-cover">
+                                        <img src="./assets/images/pricing-production.png" alt="Production" width="90" height="90" class="img-cover">
                                     </figure>
 
                                     <div class="wrapper">
@@ -371,11 +372,247 @@
             </section>
 
 
+            <!-- DISCOGRAPHY -->
+            
+            <!-- <section class="section discography" id="discography" aria-label="music discography">
+                <div class="container">
+
+                    <div class="title-wrapper">
+
+                    <div>
+                        <h2 class="section-title">Lastest Music Discography</h2>
+
+                        <p class="section-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias odit enim praesentium cumque vitae facere placeat assumenda nulla libero fuga, dolorum ratione temporibus officiis quidem tempora sunt tempore, fugit obcaecati.
+                        </p>
+                    </div>
+
+                    <a href="#" class="btn has-before">
+                        <span class="span">Explore More Music</span>
+
+                        <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                    </a>
+
+                    </div>
+
+                    <ul class="grid-list">
+
+                        <li>
+                            <div class="discography-card">
+                                <p class="section-text">
+                                  AJ1Tha
+                                </p>
+                                
+                                <audio controls>
+                                    <source src="/assets/Audio/A1J_Tha_Producer_-_Luxury_mix_v1.mp3" type="audio/mpeg">
+                                </audio>
+
+                           
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </section> -->
+
+            <!-- APPOITMENT -->
+
+            <section class="section appoin" id="appointment" aria-label="appointment">
+                <div class="container">
+
+                    <div class="appoin-card">
+
+
+                        <figure class="card-banner img-holder" style="--width: 250; --height: 774;">
+                        <img src="./assets/images/appoin-banner-1.jpeg" width="250" height="774" loading="lazy" class="img-cover">
+                        </figure>
+
+                        <div class="card-content">
+
+
+
+                            <h2 class="h2 section-title">Make Appointment</h2>
+
+                            <p class="section-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque omnis pariatur commodi consequuntur. Totam vero minus culpa id! Error possimus magnam voluptates iste eos, nulla aliquid! Sequi cum provident totam?
+                            </p>
+
+                            <form action="" class="appoin-form">
+
+                                <div class="input-wrapper">
+                                    <input type="text" name="name" placeholder="Your Full Name" required class="input-field">
+
+                                    <input type="email" name="email_address" placeholder="Email Address" required class="input-field">
+                                </div>
+
+                                <div class="input-wrapper">
+                                    <input type="text" name="phone" placeholder="Phone Number" required class="input-field">
+
+                                    <select name="category" class="input-field">
+
+                                        <option value="Select Category">Select Category</option>
+                                        <option value="2-Track Mixing">2-Track Mixing</option>
+                                        <option value="Full Stems Mixing">Full Stems Mixing</option>
+                                        <option value="Mastering">Mastering</option>
+                                        <option value="Production">Production</option>
+
+                                    </select>
+                                </div>
+
+                                <input type="date" name="date" required class="input-field date">
+
+                                <textarea name="message" placeholder="Write Message" required class="input-field"></textarea>
+
+                                <button type="submit" class="form-btn">
+                                    <span class="span">Book Appointment Now</span>
+
+                                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                                </button>
+
+                            </form>
+
+                        </div>
+
+                        <figure class="card-banner img-holder" style="--width: 250; --height: 774;">
+                            <img src="./assets/images/appoin-banner-2.jpeg" width="250" height="774" loading="lazy" class="img-cover">
+                            </figure>
+
+
+
+                    </div>
+                </div>
+            </section>
+
         </article>
     </main>
 
 
+    <!-- FOOTER -->
 
+    <footer class="footer has-bg-image" style="background-image: url('/assets/images/footer-bg.jpeg');">
+    <div class="container">
+
+        <div class="footer-top">
+
+            <div class="footer-brand">
+
+                <a href="#" class="logo">
+                    Mixifi
+                    <span class="span">Your Audio</span>
+                </a>
+
+                <form action="" class="input-wrapper">
+
+                    <input type="email" name="email_address" placeholder="Enter Your Email" required class="email-field">
+
+
+                    <button type="submit" class="btn has-before">
+                        <span class="span">Subscribe Now</span>
+
+                        <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                    </button>
+
+                </form>
+
+            </div>
+
+            <div class="footer-link-box">
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Quick Links</p>
+                    </li>
+
+                    <li>
+                        <a href="#services" class="footer-link has-before">Our Services</a>
+                    </li>
+
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/ctorres0312/" class="footer-link has-before">LinkedIn</a>
+                    </li>
+
+                    <li>
+                        <a target="_blank" href="https://github.com/ctorres0312" class="footer-link has-before">GitHub</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Services</p>
+                    </li>
+
+                    <li>
+                        <a href="#mixingprice" class="footer-link has-before">Mixing</a>
+                    </li>
+
+                    <li>
+                        <a href="#masteringprice" class="footer-link has-before">Mastering</a>
+                    </li>
+
+                    <li>
+                        <a href="#productionprice" class="footer-link has-before">Production</a>
+                    </li>
+
+                </ul>
+
+
+                <ul class="footer-list">
+                    <li>
+                        <p id="contact-us" class="footer-list-title">Contact Us</p>
+                    </li>
+
+                    <li class="footer-list-item">
+                        <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+                        
+                        <address class="contact-link">
+                            Orlando, FL 
+                        </address>
+                    </li>
+
+                    <li class="footer-list-item">
+                        <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+
+                        <a href="tel: +1 (336) 491-2948" class="contact-link">+1 (336) 491-2948</a>
+                    </li>
+
+                    <li class="footer-list-item">
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                        <span class="contact-link">Monday - Saturday, 08 am - 09 pm</span>
+                    </li>
+
+                    <li class="footer-list-item">
+                        <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+                        <a href="mailto:cktorres0312@gmail.com" class="contact-link">cktorres0312@gmail.com</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p class="copyright">
+                &copy; 2023 <a href="#" class="copyright-link">Christian Torres</a>. All Rights Reserved.
+            </p>
+        </div>
+
+    </div>
+    </footer>
+
+
+    <!-- Back to top -->
+
+    <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+        <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
 
 
 
